@@ -37,6 +37,11 @@ button{
     
 }
 
+button:active{
+    position: relative;
+    top: 5px;
+}
+
 .counter {
     display: block;
     text-align: center;

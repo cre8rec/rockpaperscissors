@@ -1,5 +1,7 @@
 var game, rounds, playerMove, sum, gamePlaying, finalResult;
 
+
+
 var playerScore = 0 
 var compScore = 0 
 
@@ -7,7 +9,12 @@ sum = 0;
 
 var game = 0
 
-var newGameButton = document.querySelector('.newGame')
+document.querySelector('.roundWinner').textContent = 'best to 5'
+
+var newGameButton = document.querySelector('.newGame');
+
+
+
 
 //computer random choice
 function compMove(){
@@ -124,7 +131,7 @@ function init(){
     document.querySelector('.comp-score').textContent = 0
 
     this.finalResult.textContent = ' '
-    document.querySelector('.roundWinner').textContent = ' '
+    document.querySelector('.roundWinner').textContent = 'best to 5'
     newGameButton.style.display = 'none'
     
 }
