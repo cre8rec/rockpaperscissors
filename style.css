@@ -6,9 +6,7 @@ font-family: 'Press Start 2P', cursive;}
 button{
     color: white;
     background-color: black;
-    border: none;   
-    
-    
+    border: none;  
 }
 
 button:focus{
