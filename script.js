@@ -9,23 +9,13 @@ var game = 0
 
 var newGameButton = document.querySelector('.newGame')
 
-//computer random 
+//computer random choice
 function compMove(){
     return computerSelection = Math.floor(Math.random() * 3);
 };
 
 
-
-
-/*function score(sum){
-    result()
-    if (sum = 3, 4, 9){playerScore++}
-    else{playerScore += 0}
-    return playerScore
-};*/
-
-
-
+//chooses winner 
 function winner() { 
     let message = '';
     if (sum == 3){message += 'you win with rock'}
@@ -38,44 +28,38 @@ function winner() {
     return message   
 }
 
-//
+//add player move to comp move 
 function result(playerMove){
     sum = compMove() + playerMove;
    // return winner()
-  
     return winner() + ' ' 
 };
-    
+
+//update score 
 function updatePlayerScore(answer){
     if (answer.includes('you')){playerScore++}
     return playerScore
 }
-
 function updateCompScore(answer){
     if (answer.includes('computer')){compScore++}
     return compScore
 }
     
+
 var finalResult = document.querySelector('.gameWinner');
 
-
+//game results 
 function checkResult(playerScore, compScore) {
     if(playerScore > compScore){
-        
         finalResult.textContent = "You Won!";
         newGame()
-        
-        
     } else if(playerScore < compScore) {
-        
         finalResult.textContent = "You Lost";
         newGame()
-        
     }  
 }
 
-
-
+//new game button appears
 function newGame(){
         console.log('new game?');
         newGameButton.style.display = 'flex'
@@ -83,7 +67,7 @@ function newGame(){
 
 
 
-
+//button choices and outcomes - could be condensed 
 const rock = document.querySelector('.rock');
 rock.onclick = () => {
 
@@ -132,7 +116,7 @@ scissors.onclick = () => {
                          }
 
 
-
+//initialize 
 function init(){
     playerScore = 0
     compScore = 0
@@ -148,7 +132,7 @@ function init(){
 
 
 
-
+//original code
 
 /*function playRound(playerSelection) {
     let game = 0
