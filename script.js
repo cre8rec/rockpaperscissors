@@ -1,6 +1,6 @@
 var game, rounds, playerMove, sum, gamePlaying, finalResult;
 
-
+//
 
 var playerScore = 0 
 var compScore = 0 
