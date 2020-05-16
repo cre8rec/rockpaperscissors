@@ -14,9 +14,26 @@ button:focus{
 }
 
 .newGame{
-   color: red;
+   color: #F93878;
     display: none;
-    
+    animation-name: colorshift;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorshift {
+    0%{
+        color: #F93878;
+    }
+    33%{
+        color: #6900FF; 
+    }
+    66%{
+        color: #0068FF;
+    }
+    100%{
+        color: #F93878;
+    }
 }
 
 .ng{
@@ -43,7 +60,7 @@ button:active{
 .counter {
     display: block;
     text-align: center;
-    margin: 50px
+    margin: 30px
 }
 
 
